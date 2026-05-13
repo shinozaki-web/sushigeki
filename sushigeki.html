@@ -2058,10 +2058,10 @@ document.addEventListener('keydown', function(e){
   }
 });
 
-// どこをクリックしていてもキー入力をtype-inputへ自動転送
+// どこをクリック・キー入力してもtype-inputへ自動転送
 document.addEventListener('keydown', function(e){
   if(!gameActive || gamePaused) return;
-  if(e.key.length !== 1) return; // 印字可能文字のみ
+  if(e.key.length !== 1) return;
   if(e.ctrlKey || e.metaKey || e.altKey) return;
   const quizOv = document.getElementById('quiz-overlay');
   if(quizOv && quizOv.classList.contains('show')) return;
@@ -2069,6 +2069,14 @@ document.addEventListener('keydown', function(e){
   if(jimoFs && jimoFs.style.display !== 'none' && jimoFs.style.opacity !== '0') return;
   const inp = document.getElementById('type-input');
   if(document.activeElement !== inp){ inp.focus(); }
+});
+document.addEventListener('mousedown', function(e){
+  if(!gameActive || gamePaused) return;
+  const quizOv = document.getElementById('quiz-overlay');
+  if(quizOv && quizOv.classList.contains('show')) return;
+  if(['BUTTON','INPUT','A','SELECT','TEXTAREA'].includes(e.target.tagName)) return;
+  const inp = document.getElementById('type-input');
+  setTimeout(() => { if(!inp.disabled) inp.focus(); }, 0);
 });
 
 // ============================================================
