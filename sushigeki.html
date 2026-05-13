@@ -1085,17 +1085,29 @@ const ALL_ITEMS = [
 
 const QUIZZES = [
   { q:'北九州市にある明治の世界遺産の製鉄所は？', hint:'ひらがな・漢字・ローマ字で', a:'yawataseitetsujo', display:'八幡製鉄所', ja:['やわたせいてつじょ','八幡製鉄所','八幡製鐵所'] },
-  { q:'関門海峡をはさんだ対岸の山口県の市は？', hint:'ひらがな・漢字・ローマ字で', a:'shimonoseki', display:'下関', ja:['しものせき','下関'] },
+  { q:'関門海峡をはさんだ対岸の山口県の市は？', hint:'山口県で有名な河豚の産地', a:'shimonoseki', display:'下関', ja:['しものせき','下関','下関市','しものせきし'] },
   { q:'北九州発祥のソウルフードは？', hint:'やき＋うどん', a:'yakiudon', display:'焼きうどん', ja:['やきうどん','焼きうどん','焼うどん'] },
-  { q:'小倉城を築いた武将の名字は？（細川）', hint:'ひらがな・漢字・ローマ字で', a:'hosokawa', display:'細川（忠興）', ja:['ほそかわ','細川'] },
-  { q:'寿司のご飯を何という？', hint:'しゃり', a:'shari', display:'シャリ', ja:['しゃり'] },
+  { q:'小倉城を築いた武将の名字は？', hint:'戦国時代の武将・忠興が有名', a:'hosokawa', display:'細川（忠興）', ja:['ほそかわ','細川'] },
+  { q:'寿司のご飯を何という？', hint:'酢を混ぜた白いご飯の別名', a:'shari', display:'シャリ', ja:['しゃり'] },
   { q:'北九州市は何区で構成されている？（数字で）', hint:'ひらがな・漢字・数字', a:'nana', display:'七（7区）', ja:['なな','七','7'] },
-  { q:'門司港名物の果物は何？', hint:'バナナの叩き売り', a:'banana', display:'バナナ', ja:['ばなな'] },
-  { q:'河豚を調理するために必要なものは？', hint:'めんきょ', a:'menkyo', display:'免許', ja:['めんきょ','免許'] },
-  { q:'北九州の百万ドルの夜景が見える山は？', hint:'さらくらやま', a:'sarakurayama', display:'皿倉山', ja:['さらくらやま','皿倉山'] },
-  { q:'折尾駅名物の駅弁は？', hint:'かしわめし', a:'kashiwameshi', display:'かしわめし', ja:['かしわめし','かしわ飯','柏飯','柏めし'] },
-  { q:'門司港の重要文化財の駅名は？', hint:'もじこうえき', a:'mojikoeki', display:'門司港駅', ja:['もじこうえき','門司港駅'] },
-  { q:'北九州まつりが開催される季節は？', hint:'夏', a:'natsu', display:'夏', ja:['なつ','夏'] },
+  { q:'門司港名物の叩き売りで有名な南国の果物は？', hint:'黄色くて細長い南国フルーツ', a:'banana', display:'バナナ', ja:['ばなな'] },
+  { q:'河豚を調理するために必要なものは？', hint:'調理には特別な資格が必要', a:'menkyo', display:'免許', ja:['めんきょ','免許'] },
+  { q:'北九州の百万ドルの夜景が見える山は？', hint:'帆柱山地の最高峰', a:'sarakurayama', display:'皿倉山', ja:['さらくらやま','皿倉山'] },
+  { q:'折尾駅名物の鶏肉を使った駅弁は？', hint:'鶏のそぼろ・錦糸卵が乗った名物弁当', a:'kashiwameshi', display:'かしわめし', ja:['かしわめし','かしわ飯','柏飯','柏めし'] },
+  { q:'門司港の重要文化財の駅名は？', hint:'九州最北端にある歴史ある駅', a:'mojikoeki', display:'門司港駅', ja:['もじこうえき','門司港駅'] },
+  { q:'北九州まつりが開催される季節は？', hint:'一年で一番暑い季節', a:'natsu', display:'夏', ja:['なつ','夏'] },
+  { q:'北九州市門司区のゆるキャラの名前は？', hint:'ひらがな2文字と伸ばし棒', a:'jiimo', display:'じーも', ja:['じーも'] },
+  { q:'北九州市が5市合併で誕生したのは昭和何年？', hint:'２けたの数字を掛け算すると24', a:'sanjuuhachi', display:'昭和38年', ja:['38','38年','昭和38年','さんじゅうはち'] },
+  { q:'若戸大橋でつながれているのは若松区と何区？', hint:'北九州市内の区同士', a:'tobataku', display:'戸畑区', ja:['とばたく','戸畑区','とばた','戸畑'] },
+  { q:'関門海峡の海底トンネルは歩いて渡れる？', hint:'人道トンネルが存在する', a:'hai', display:'はい', ja:['はい','yes'] },
+  { q:'巌流島での決闘で宮本武蔵と戦った剣士は？', hint:'「燕返し」が必殺技', a:'sasakikojiro', display:'佐々木小次郎', ja:['ささきこじろう','佐々木小次郎','こじろう','小次郎'] },
+  { q:'北九州市の市の花は？', hint:'夏の花・太陽のイメージ', a:'himawari', display:'ひまわり', ja:['ひまわり','向日葵','ヒマワリ'] },
+  { q:'銀河鉄道999の作者・松本零士ゆかりの駅は？', hint:'北九州市の中心駅', a:'kokuraeki', display:'小倉駅', ja:['こくらえき','小倉駅','こくら','小倉'] },
+  { q:'門司港の名物グルメといえば焼き○○は？', hint:'スパイシーな料理', a:'yakikare', display:'焼きカレー', ja:['やきかれー','焼きカレー','焼カレー','やきかれ'] },
+  { q:'寿司屋でお茶のことを何と言う？', hint:'寿司屋の隠語', a:'agari', display:'あがり', ja:['あがり'] },
+  { q:'寿司屋で醤油のことを何と言う？', hint:'紫色から来た名前', a:'murasaki', display:'むらさき', ja:['むらさき','紫'] },
+  { q:'わさびを寿司屋では何と言う？', hint:'目に染みることから', a:'namida', display:'なみだ', ja:['なみだ','涙'] },
+  { q:'「いくら」はどこの国の言葉？', hint:'ヨーロッパの大国', a:'roshiago', display:'ロシア語', ja:['ろしあ','ロシア','ロシア語','ろしあご'] },
 ];
 
 const POWERUPS = [
@@ -1630,7 +1642,7 @@ document.getElementById('type-input').addEventListener('input', function(e){
     return;
   }
 
-  const visible = plates.filter(p => !p.done && p.x > -70);
+  const visible = plates.filter(p => !p.done && p.x > -95);
 
   // ロック中の皿がまだ一致していればその皿だけ対象にする
   const pool = (lockedPlate && !lockedPlate.done && lockedPlate.word.startsWith(typed))
@@ -1995,7 +2007,9 @@ function togglePause(){
     btn.textContent = '▶ 再開';
     btn.style.borderColor = 'var(--gold)';
     btn.style.color = 'var(--gold)';
-    fadeBgm(0.12, 300);
+    clearInterval(bgmFadeTimer);
+    bgmAudio.volume = 0;
+    bgmAudio.pause();
     showPauseOverlay();
   } else {
     gamePaused = false;
@@ -2005,7 +2019,7 @@ function togglePause(){
     btn.style.borderColor = '';
     btn.style.color = '';
     hidePauseOverlay();
-    fadeBgm(1.0, 300);
+    if(soundOn){ bgmAudio.volume = BGM_VOL; bgmAudio.play().catch(()=>{}); }
     // 二重起動を防ぐため既存のループを必ずクリアしてから再開
     clearInterval(timerInt);
     cancelAnimationFrame(animFrame);
@@ -2042,6 +2056,19 @@ document.addEventListener('keydown', function(e){
     if(quizOv && quizOv.classList.contains('show')) return;
     togglePause();
   }
+});
+
+// どこをクリックしていてもキー入力をtype-inputへ自動転送
+document.addEventListener('keydown', function(e){
+  if(!gameActive || gamePaused) return;
+  if(e.key.length !== 1) return; // 印字可能文字のみ
+  if(e.ctrlKey || e.metaKey || e.altKey) return;
+  const quizOv = document.getElementById('quiz-overlay');
+  if(quizOv && quizOv.classList.contains('show')) return;
+  const jimoFs = document.getElementById('jimo-fullscreen');
+  if(jimoFs && jimoFs.style.display !== 'none' && jimoFs.style.opacity !== '0') return;
+  const inp = document.getElementById('type-input');
+  if(document.activeElement !== inp){ inp.focus(); }
 });
 
 // ============================================================
@@ -2179,7 +2206,7 @@ function resumeGameAfterJimo(){
   cancelAnimationFrame(animFrame);
   timerInt = setInterval(tick, 1000);
   animFrame = requestAnimationFrame(gameLoop);
-  fadeBgm(1.0, 300);
+  if(!gamePaused) fadeBgm(1.0, 300);
 }
 
 function createSparks(container){
@@ -2262,7 +2289,7 @@ function spawnJimo(){
           if(char.style.display === 'none') return;
           placeJimo();
           scheduleNextMove();
-        }, 600 + Math.random() * 600);
+        }, 1600 + Math.random() * 600);
       }
       scheduleNextMove();
 
@@ -2318,14 +2345,23 @@ function dismissJimo(escaped = false){
 // DIFF / LANG
 // ============================================================
 function setDiff(d,btn){
-  // たまごはチュートリアル画面を開く（ベルトゲームは変更しない）
-  if(d==='beginner'){ openTutorial(); return; }
+  if(d==='beginner'){
+    if(gameActive){
+      gameActive=false;
+      clearInterval(timerInt);
+      cancelAnimationFrame(animFrame);
+      clearTimeout(goldSpawnTimer);
+      clearTimeout(trapSpawnTimer);
+    }
+    openTutorial();
+    return;
+  }
   diff=d;
   document.querySelectorAll('[id^=diff-]').forEach(b=>b.classList.remove('act'));
   btn.classList.add('act');
   document.getElementById('belt-label').textContent='SPEED: '+{easy:'見習い',normal:'板前',hard:'板長'}[d];
   document.getElementById('finger-guide').classList.remove('show');
-  if(!gameActive) buildLanes();
+  if(gameActive) startGame(); else buildLanes();
 }
 function setLang(l,btn){
   lang=l;
@@ -2428,6 +2464,7 @@ function stopBgm(){
 
 function fadeBgm(ratio, ms){
   clearInterval(bgmFadeTimer);
+  if(gamePaused) return;
   if(!soundOn && ratio > 0) return;
   const target = ratio * BGM_VOL;
   const steps = 20;
